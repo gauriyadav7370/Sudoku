@@ -23,7 +23,7 @@ table {
 td {
     width: 40px;
     height: 40px;
-    border: 1px solid #000;
+    border: 1px solid #ccc; /* Light border for individual cells */
     text-align: center;
 }
 
@@ -38,4 +38,13 @@ button {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
+}
+
+/* Styles for 3x3 quadrants */
+td:nth-child(3n) {
+    border-right: 2px solid #000; /* Darker border for right edge of each 3x3 */
+}
+
+tr:nth-child(3n) td {
+    border-bottom: 2px solid #000; /* Darker border for bottom edge of each 3x3 */
 }
